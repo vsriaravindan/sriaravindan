@@ -152,7 +152,7 @@
                     <a href="https://wa.me/91XXXXXXXXXX" target="_blank" rel="noopener" class="btn btn-primary">
                         <i class="fab fa-whatsapp"></i> Let's Chat
                     </a>
-                    <a href="mailto:sriaravindan@example.com" class="btn btn-outline">
+                    <a href="mailto:vsriaravindan@gmail.com" class="btn btn-outline" id="email-btn" onclick="return openEmailWithGreeting(event)">
                         <i class="fas fa-envelope"></i> Email Me
                     </a>
                 </div>
@@ -165,6 +165,21 @@
         <p>Created By <a href="https://vsriaravindan.github.io" target="_blank" rel="noopener">Sri Aravindan V</a> | © 2026 All Rights Reserved</p>
     </footer>
 
+    <!-- Email dynamic greeting -->
+    <script>
+    function openEmailWithGreeting(e) {
+        e.preventDefault();
+        const now = new Date();
+        // Convert to IST (UTC+5:30)
+        const istOffset = 5.5 * 60 * 60 * 1000;
+        const istDate = new Date(now.getTime() + now.getTimezoneOffset() * 60 * 1000 + istOffset);
+        const hour = istDate.getHours();
+        const greeting = hour < 12 ? 'good morning' : 'good afternoon';
+        const subject = encodeURIComponent('regarding job application');
+        const body = encodeURIComponent('hi, ' + greeting + ',\n\n');
+        window.open('mailto:vsriaravindan@gmail.com?subject=' + subject + '&body=' + body, '_blank');
+    }
+    </script>
     <script src="script.js"></script>
 </body>
 </html>
