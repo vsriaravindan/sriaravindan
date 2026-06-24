@@ -1,19 +1,22 @@
-# Portfolio website for Sri Aravindan V
+# Sri Aravindan V — Portfolio
 
 Modern developer portfolio built with vanilla HTML/CSS/JS.
 
-Features:
-- Dark/Light mode toggle (localStorage persisted)
+🌐 **Live:** [vsriaravindan.github.io/sriaravindan](https://vsriaravindan.github.io/sriaravindan/)
+
+## Features
+
+- 🌗 Dark/Light mode toggle (localStorage persisted)
 - Glassmorphism cards & smooth animations
-- Fully responsive mobile-first layout
+- 📱 Fully responsive mobile-first layout
 - Gradient hero text with purple/navy palette
 - Skill bars with scroll-triggered animation
 - WhatsApp & Email contact links
 
-## Deploy to GitHub Pages
+## Tech Stack
 
-1. Push this repo to `vsriaravindan/vsriaravindan.github.io`
-2. Go to Settings → Pages → Source: Deploy from branch → main → / (root)
-3. Done — your site is live at `https://vsriaravindan.github.io`
+Vanilla HTML + CSS + JS — no build step, no frameworks, no dependencies.
 
-To test locally: just open `index.html` in a browser (no build step needed).
+## Local Dev
+
+Open `index.html` in any browser. That's it.
